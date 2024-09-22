@@ -1,0 +1,57 @@
+@keyframes navbar-slideIn{
+    from {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: .5;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hero-slideIn{
+    from{
+        transform: translateX(-200%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes heroTextFade{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes sideNavSlide{
+    from {
+        transform: translateX(400%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

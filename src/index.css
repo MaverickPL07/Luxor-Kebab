@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  margin: 0;
+  background-image: linear-gradient(45deg, #171616, rgba(26, 24, 24, 1)  );
+  
+  /* !!!!!!background-image: radial-gradient(circle at top right, #1A1818 30%, #000 80%); */
+
+  /* background-image: radial-gradient(circle at top right, rgb(174, 128, 35) 1%, #1A1818 30%, #000 80%); */
+  min-height: 100vh;
+  height: fit-content;
+  font-family: "Rubik", sans-serif;
+  color: #FFF;
+  transition: all .5s;
+  line-height: normal;
+}
+
+html{
+  scroll-behavior: smooth !important;
+}
+
+.logo{
+  font-family: 'Archivo Black', sans-serif;
+  background-image: linear-gradient(45deg, #E09400, #B27600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.xd{
+  width: 50vw;
+  height: 50vw;
+  background-image: radial-gradient(circle at top right, rgba(174, 128, 35, .35) 10%, transparent 50%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+
+.nav-side{
+  filter: blur(1vh);
+}
+
+.nav-under{
+  transition: all .5s;
+}
+
+.nav-option{
+  transition: all .5s;
+}
+
+.nav-option:hover .nav-under{
+  width: 100%;
+  background-color: #E09400 !important;
+  transition: all .5s;
+}
+
+#discover-button{
+  box-shadow: 0 0 100px #E09400 !important;
+}
+
+#hero-image{
+  filter: drop-shadow(0 0 100px rgba(255, 255, 255, .5));
+}
+
+.italianno{
+  font-family: "Italianno", cursive;
+}
+
+.inter{
+  font-family: 'Inter', sans-serif;
+}
+
+#meat{
+  filter: drop-shadow(0 0 10vh rgba(255, 255, 255, .5));
+  width: 6vw !important;
+  height: auto;
+}
+
+.card-gradient{
+  background-image: linear-gradient(45deg, rgba(153, 101, 0, .05), rgba(255, 168, 0, .2) 150%);
+  box-shadow: 0 0 100px rgba(255, 168, 0, .16);
+}
+
+hr{
+  padding: .1vh;
+  margin: 1vh 0;
+  border-top: 1px solid #FFA800;
+}
+
+.product-card{
+  transition: all .5s !important;
+
+}
+
+.product-card:hover{
+  box-shadow: 0 0 100px rgba(255, 168, 0, .8);
+  /* background-image: linear-gradient(45deg, rgba(153, 101, 0, .05), rgba(255, 168, 0, .7) 150%); */
+  transition: all .5s !important;
+}
+
+.product-card-badge{
+  width: 15vw !important;
+  filter: drop-shadow(0 0 10px rgba(255, 168, 0, .5));
+  border-radius: 1vh 1vh 0 0;
+  transform: translateX(-1vh) translateY(-1vh);
+}
+
+.plan-card-badge{
+  filter: drop-shadow(0 0 10px rgba(255, 168, 0, .5));
+  border-radius: 1vh 1vh 0 0;
+  transform: translateX(-5vh) translateY(-5vh);
+  width: 15vw !important;
+}
+
+.review{
+  background-image: linear-gradient(45deg, rgba(153, 101, 0, .05), rgba(255, 168, 0, .5) 150%);
+  box-shadow: 0 0 10px rgba(255, 168, 0, .8);
+  transition: all .5s;
+}
+
+.review:hover{
+  box-shadow: 0 0 50px rgba(255, 168, 0, .8);
+  transition: all .5s;
+}
+
+.membership-plan{
+  background-image: linear-gradient(45deg, rgba(153, 101, 0, .05), rgba(255, 168, 0, .5) 150%);
+  transition: all .5s;
+}
+
+.membership-plan:nth-of-type(1){
+  filter: opacity(.25);
+}
+
+.membership-plan:nth-of-type(2){
+  filter: opacity(.75);
+}
+
+.membership-plan:nth-of-type(3){
+  filter: opacity(1);
+  box-shadow: 0 0 50px rgba(255, 168, 0, .8);
+}
+
+.membership-plan:hover{
+  box-shadow: 0 0 50px rgba(255, 168, 0, .8);
+  filter: opacity(1);
+  transition: all .5s;
+}
+
+
+.divider{
+  filter: drop-shadow(0 0 10px white) !important;
+}
+
+#newsletter-submit{
+  border-radius: 0 1vh 1vh 0;
+  box-shadow: 0 0 50px rgba(255, 168, 0, .8);
+  transition: all .5s !important;
+}
+
+.newsletter-hidden{
+  opacity: 0;
+  transition: all .5s !important;
+}
+
+.newsletter-visible{
+  opacity: 1;
+  transition: all .5s !important;
+}
+
+.circle-active-side{
+  box-shadow: 0 0 50px rgba(255, 168, 0, .8);
+}
+
+#navbar{
+  animation: navbar-slideIn 1s 1 alternate forwards;
+}
+
+#hero{
+  animation-delay: 1s;
+  animation: hero-slideIn 1s 1 alternate forwards;
+}
+
+#hero-text{
+  opacity: 0;
+  animation-delay: 3s;
+  animation: heroTextFade 10s 1 alternate forwards;
+}
+
+.sidenav{
+  animation: sideNavSlide 1s 1 alternate forwards;
+}
+
+.side-nav-circle{
+  animation: fade 5s 1 alternate forwards;
+}
