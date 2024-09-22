@@ -1,6 +1,6 @@
 const MeatIngredients = ({meat}) => {
     return (
-        <div className="card-gradient lg:absolute lg:right-[15vw] border-orange border-[1px] p-[3vh] rounded-[.5vh] min-w-[12.5vw] h-[40vh]">
+        <div className="card-gradient lg:absolute lg:right-[15vw] border-orange border-[1px] p-[3vh] rounded-[.5vh] lg:min-w-[12.5vw] h-[40vh] w-fit min-w-[12.5vw]">
             <div className="text-[#757575] text-[1vh] lg:text-[2vh]">{meat.name}</div>
             <div className="text-[#FFFFFF] font-bold text-[1.25vh] lg:text-[1.75vh]">Ingredients</div>
             <hr />

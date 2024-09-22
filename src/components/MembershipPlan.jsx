@@ -5,7 +5,7 @@ import Button from "./Button"
 const MembershipPlan = ({plan}) => {
     return (
         <>
-            <div className="border-[1px] border-orangelight p-[5vh] rounded-[1vh] membership-plan w-[25vw] lg:w-[15vw] min-h-[50vh]">
+            <div className="border-[1px] border-orangelight p-[5vh] rounded-[1vh] membership-plan lg:w-[25vw] min-h-[50vh] lg:my-[0] my-[5vh]">
                 {plan.badge ? <div className="w-0 h-0"><div className="w-full bg-orangelight h-[5vh] plan-card-badge flex items-center justify-center text-[2vh] font-extrabold">{plan.badge}</div></div> : ""}
                 <div className="font-semibold text-[3vh]">{plan.name}</div>
                 

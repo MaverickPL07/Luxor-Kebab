@@ -34,7 +34,7 @@ const Navbar = () => {
 
         {
             mobile ?
-            <div className="border-[1px] border-orangelight rounded-[1vh] bg-[#181818] absolute top-[12.5vh] right-[8vw] z-10">
+            <div className="border-[1px] border-orangelight rounded-[1vh] bg-[#181818] absolute top-[12.5vh] right-[8vw] z-10 w-[80vw]">
                 <NavbarTabMobile text={"Home"} link={"#"} />
                 <NavbarTabMobile text={"Meat"} link={"#section-meat"} />
                 <NavbarTabMobile text={"Menu"} link={"#section-menu"} />

@@ -5,11 +5,10 @@ import HeroFooterIcon from "./HeroFooterIcon"
 const HeroFooter = () => {
     return (
         <>
-        {/* right-[35vw]translate-x-[25%] bottom-[6vh] */}
-            <div className="flex relative  italianno text-[2vw] ml-[65vh] text-[#767676]  gap-[12vw]">
+            <div className="flex relative italianno text-[7vw] lg:text-[2vw] mx-auto w-fit text-[#767676] gap-[12vw]">
                 <div>
                     Visit us on social media!<br />
-                    <div className="text-[1vw] flex justify-center gap-[1vw]">
+                    <div className="lg:text-[1vw] text-[5vw] flex justify-center lg:gap-[1vw] gap-[3vw]">
                         <HeroFooterIcon link={"https://facebook.com"} icon={faFacebook} color={"orange"} />
                         <HeroFooterIcon link={"https://instagram.com"} icon={faInstagram} color={"orange"} />
                         <HeroFooterIcon link={"https://linkedin.com"} icon={faLinkedin} color={"orange"} />

@@ -15,7 +15,7 @@ const Meat = () => {
                     <div className="w-fit">
                         <SectionTitle title={"MEAT"} subtitle={"Discover more about our delicious and juicy handmade meats we use in process of making our kebabs."} />
                         
-                        <div className="grid place-items-center mt-[12vh] mb-[12vh] text-[#FFFFFF]">
+                        <div className="grid place-items-center mt-[6vh] mb-[6vh] text-[#FFFFFF]">
                             <label className="text-[2vh]">Meat type</label><br />
 
                             <select className="text-[1.75vh] text-black p-[1vh] min-w-[15vw] rounded-[.5vw] focus:outline-none bg-orange font-medium text-[#FFFFFF] text-white" onChange={e => setMeat(meats[e.target.value])}>
@@ -25,7 +25,7 @@ const Meat = () => {
                         </div>
                     </div>
 
-                    <div className="sm:flex sm:items-center sm:gap-[3vw] sm:justify-center">
+                    <div className="flex items-center gap-[3vw] justify-center lg:block">
                         <img src={meat.img} className="lg:absolute lg:left-[15vw]" id="meat" />
                         <MeatIngredients meat={meat} />
                     </div>

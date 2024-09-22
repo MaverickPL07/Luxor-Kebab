@@ -4,7 +4,7 @@ import { faStar as starEmpty } from "@fortawesome/fontawesome-free-regular"
 
 const Restaurant = ({restaurant}) => {
     return (
-        <div className="w-[30vw]">
+        <div className="lg:w-[30vw]">
             <div className="text-orange uppercase text-[5vh] font-bold">{restaurant.name}</div>
             <div className="text-[2vh] text-[#9E9E9E] font-regular">Since {restaurant.start_date}</div>
             <div className="text-[2vh] text-[#9E9E9E] font-light my-[3vh]">{restaurant.desc}</div>

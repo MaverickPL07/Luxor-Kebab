@@ -5,15 +5,15 @@ import { faStar as starEmpty } from "@fortawesome/fontawesome-free-regular"
 const Review = ({review}) => {
     return (
         <>
-            <div className="border-[1px] border-orangelight p-[2vh] rounded-[1vh] review w-[20vw]">
+            <div className="border-[1px] border-orangelight p-[2vh] rounded-[1vh] review w-[90vw] my-[5vh] lg:my-[0] lg:w-[20vw]">
                 <div className="text-orangelight text-[2vh]">
                     {
                         review.stars.map((star, i) => (
-                            <>
+                            <div  key={i}>
                                 {
-                                    star.filled ? <FontAwesomeIcon icon={faStar} key={i} /> : <FontAwesomeIcon icon={starEmpty} key={i} />
+                                    star.filled ? <FontAwesomeIcon icon={faStar} /> : <FontAwesomeIcon icon={starEmpty} />
                                 }
-                            </>
+                            </div>
                         ))
                     }
                 </div>

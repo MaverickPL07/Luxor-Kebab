@@ -10,7 +10,7 @@ const Menu = () => {
                 <div className="w-[90vw] m-auto">
                     <SectionTitle title={"MENU"} subtitle={"Check our menu. Everyone will find something suitable for them!"} />
 
-                    <div className="flex gap-[3vw] justify-center items-center my-[9vh]">
+                    <div className="lg:flex gap-[3vw] justify-center items-center my-[9vh] grid grid-cols-2">
                         {
                             products.map((item, i) => (
                                 <Product key={i} product={item} />

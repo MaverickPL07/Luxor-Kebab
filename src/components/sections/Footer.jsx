@@ -5,7 +5,7 @@ import Logo from "../Logo"
 
 const Footer = () => {
     return (
-        <div className="p-[5vh] w-full bg-[#181818] flex gap-[10vw]">
+        <div className="p-[5vh] w-full bg-[#181818] lg:flex gap-[10vw] grid">
             <div>
                 <Logo />
                 <div className="italianno text-[3vh] text-[gray]">On market since 2010</div>
