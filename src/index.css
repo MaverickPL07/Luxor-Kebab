@@ -107,7 +107,6 @@ hr{
 }
 
 .product-card-badge{
-  width: 15vw !important;
   filter: drop-shadow(0 0 10px rgba(255, 168, 0, .5));
   border-radius: 1vh 1vh 0 0;
   transform: translateX(-1vh) translateY(-1vh);
@@ -117,7 +116,6 @@ hr{
   filter: drop-shadow(0 0 10px rgba(255, 168, 0, .5));
   border-radius: 1vh 1vh 0 0;
   transform: translateX(-5vh) translateY(-5vh);
-  width: 15vw !important;
 }
 
 .review{

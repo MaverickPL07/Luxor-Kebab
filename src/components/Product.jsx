@@ -2,7 +2,7 @@ const Product = ({product}) => {
     return (
         <div className="border-[1px] rounded-[1vh] border-orange p-[1vh] lg:w-[15vw] h-[50vh] card-gradient product-card my-[5vh] lg:my-[0]">
             {
-                product.badge ? <div className="w-0 h-0"><div className="w-full bg-orangelight h-[5vh] product-card-badge flex items-center justify-center text-[2vh] font-extrabold">{product.badge}</div></div> : ""
+                product.badge ? <div className="w-0 h-0"><div className="lg:w-[15vw] w-[43.2vw] bg-orangelight h-[5vh] product-card-badge flex items-center justify-center text-[2vh] font-extrabold">{product.badge}</div></div> : ""
             }
 
             <div className={`w-full h-[25vh]`} style={{ backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundImage: `url(${product.img})`}}></div>

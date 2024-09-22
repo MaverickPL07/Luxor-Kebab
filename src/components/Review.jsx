@@ -6,10 +6,10 @@ const Review = ({review}) => {
     return (
         <>
             <div className="border-[1px] border-orangelight p-[2vh] rounded-[1vh] review w-[90vw] my-[5vh] lg:my-[0] lg:w-[20vw]">
-                <div className="text-orangelight text-[2vh]">
+                <div className="text-orangelight text-[2vh] flex items-center">
                     {
                         review.stars.map((star, i) => (
-                            <div  key={i}>
+                            <div key={i}>
                                 {
                                     star.filled ? <FontAwesomeIcon icon={faStar} /> : <FontAwesomeIcon icon={starEmpty} />
                                 }
